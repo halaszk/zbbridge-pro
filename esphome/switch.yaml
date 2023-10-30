@@ -3,7 +3,7 @@ switch:
   - platform: restart
     name: "${friendly_name} Restart"
     id: reboot 
-    internal: true
+#    internal: true
     icon: "mdi:restart"
 
   - platform: template
@@ -30,9 +30,9 @@ switch:
   - platform: gpio
     id: zigbee_rst
     pin: 15
-    name: "Zigbee RST"
+    name: "Zigbee MCU RST"
     inverted: true
-    internal: true
+#    internal: true
     restore_mode: ALWAYS_OFF
 
   - platform: gpio
